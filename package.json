@@ -1,0 +1,30 @@
+{
+  "name": "friendfinder",
+  "version": "1.0.0",
+  "description": "an app to match you with a good friend",
+  "main": "index.js",
+  "scripts": {
+    "test": "console.log('hello')"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zachfey/FriendFinder.git"
+  },
+  "keywords": [
+    "dating",
+    "app",
+    "match",
+    "friend",
+    "finder",
+    "nodejs",
+    "javascript",
+    "mysql",
+    "jquery"
+  ],
+  "author": "Zach Fey",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zachfey/FriendFinder/issues"
+  },
+  "homepage": "https://github.com/zachfey/FriendFinder#readme"
+}
