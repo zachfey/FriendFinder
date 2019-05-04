@@ -26,5 +26,9 @@
   "bugs": {
     "url": "https://github.com/zachfey/FriendFinder/issues"
   },
-  "homepage": "https://github.com/zachfey/FriendFinder#readme"
+  "homepage": "https://github.com/zachfey/FriendFinder#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "path": "^0.12.7"
+  }
 }
