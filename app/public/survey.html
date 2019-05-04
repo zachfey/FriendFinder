@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <title>Survey</title>
+</head>
+
+<body>
+    <form action="/" method="POST">
+        <textarea type="text" name="wish"></textarea>
+
+        <button id='submit' type="submit">Submit</button>
+    </form>
+
+</body>
+
+<script type="text/javascript">
+    // function table(name, phone, email, id) {
+    //     this.name = name,
+    //         this.phone = phone,
+    //         this.email = email,
+    //         this.id = id
+    // };
+    // $("#submit").on("click", function () {
+    //     event.preventDefault();
+    //     const name = $("#Name").val();
+    //     const phone = $("#PhoneNumber").val();
+    //     const email = $("#Email1").val();
+    //     const id = $("#exampleUnique").val();
+    //     console.log(name);
+    //     form_object = new table(name, phone, email, id);
+    //     console.log(form_object);
+    $('#submit').on('click', () => {
+        event.preventDefault();
+
+
+        var newFriend = {
+            name: 'zach',
+            photo: 'url',
+            score: [1, 2, 3]
+        }
+
+        console.log(newFriend);
+
+        $.ajax({
+            type: 'POST',
+            url: '/api/friends',
+            data: newFriend
+        });
+
+    })
+
+</script>
+
+</html>
