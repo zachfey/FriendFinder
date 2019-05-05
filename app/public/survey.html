@@ -203,7 +203,7 @@
         event.preventDefault();
         let responseArr = [];
         for (let i = 1; i < 10; i++) {
-            responseArr.push($('#q' + i).val()[0])
+            responseArr.push($('#q' + i).val()[0]);
         }
 
         var newFriend = {
@@ -220,7 +220,7 @@
             // $('#match').modal('toggle');
             console.log(res);
             $('#match-name').text(res.name);
-            $('#match-photo').atrr('src', res.photo);
+            $('#match-photo').attr('src', res.photo);
             $('#match').modal('show')
         });
 
