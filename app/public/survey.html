@@ -5,17 +5,158 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery.js"></script>
     <title>Survey</title>
 </head>
 
 <body>
-    <form action="/" method="POST">
-        <textarea type="text" name="wish"></textarea>
-
-        <button id='submit' type="submit">Submit</button>
-    </form>
-
+    <div class='container'>
+        <form>
+            <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="name" class="form-control" id="name" placeholder="ex John Doe...">
+            </div>
+            <div class="form-group">
+                <label for="photo">Link to a photo of you</label>
+                <input type="link" class="form-control" id="photo" placeholder="ex www.photo.com/photoofme">
+            </div>
+            <hr>
+            <div class="form-group col-md-4">
+                <h2>Question 1</h2>
+                <label for="q1">Question Text Here</label>
+                <select id="q1" class="form-control">
+                    <option selected>Choose...</option>
+                    <option>1 (Strongly Disgree)</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <div class="form-group col-md-4">
+                <h2>Question 2</h2>
+                <label for="q2">Question Text Here</label>
+                <select id="q2" class="form-control">
+                    <option selected>Choose...</option>
+                    <option>1 (Strongly Disgree)</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <div class="form-group col-md-4">
+                <h2>Question 3</h2>
+                <label for="q3">Question Text Here</label>
+                <select id="q3" class="form-control">
+                    <option selected>Choose...</option>
+                    <option>1 (Strongly Disgree)</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <div class="form-group col-md-4">
+                <h2>Question 4</h2>
+                <label for="q4">Question Text Here</label>
+                <select id="q4" class="form-control">
+                    <option selected>Choose...</option>
+                    <option>1 (Strongly Disgree)</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <div class="form-group col-md-4">
+                <h2>Question 5</h2>
+                <label for="q5">Question Text Here</label>
+                <select id="q5" class="form-control">
+                    <option selected>Choose...</option>
+                    <option>1 (Strongly Disgree)</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <div class="form-group col-md-4">
+                <h2>Question 6</h2>
+                <label for="q6">Question Text Here</label>
+                <select id="q6" class="form-control">
+                    <option selected>Choose...</option>
+                    <option>1 (Strongly Disgree)</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <div class="form-group col-md-4">
+                <h2>Question 7</h2>
+                <label for="q7">Question Text Here</label>
+                <select id="q7" class="form-control">
+                    <option selected>Choose...</option>
+                    <option>1 (Strongly Disgree)</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <div class="form-group col-md-4">
+                <h2>Question 8</h2>
+                <label for="q8">Question Text Here</label>
+                <select id="q8" class="form-control">
+                    <option selected>Choose...</option>
+                    <option>1 (Strongly Disgree)</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <div class="form-group col-md-4">
+                <h2>Question 9</h2>
+                <label for="q9">Question Text Here</label>
+                <select id="q9" class="form-control">
+                    <option selected>Choose...</option>
+                    <option>1 (Strongly Disgree)</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <div class="form-group col-md-4">
+                <h2>Question 10</h2>
+                <label for="q10">Question Text Here</label>
+                <select id="q10" class="form-control">
+                    <option selected>Choose...</option>
+                    <option>1 (Strongly Disgree)</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <button id='submit' type="submit" class='btn btn-primary'>Submit</button>
+        </form>
+        <hr>
+        <a href= '/api/friends'>API Friends List</a> | <a href = 'https://github.com/zachfey/FriendFinder'>GitHub Repo</a>
+    </div>
 </body>
 
 <script type="text/javascript">
@@ -36,22 +177,22 @@
     //     console.log(form_object);
     $('#submit').on('click', () => {
         event.preventDefault();
-
-
-        var newFriend = {
-            name: 'zach',
-            photo: 'url',
-            score: [1, 2, 3]
+        let responseArr = [];
+        for (let i = 1; i < 10; i++) {
+            responseArr.push($('#q' + i).val()[0])
         }
 
+        var newFriend = {
+            name: $('#name').val(),
+            photo: $('#photo').val(),
+            scores: responseArr
+        }
         console.log(newFriend);
-
         $.ajax({
             type: 'POST',
             url: '/api/friends',
             data: newFriend
         });
-
     })
 
 </script>
